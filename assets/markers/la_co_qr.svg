@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#fff" />
+  <rect x="20" y="20" width="360" height="360" fill="none" stroke="#000" stroke-width="8" />
+  <rect x="40" y="40" width="80" height="80" fill="#000" />
+  <rect x="280" y="40" width="80" height="80" fill="#000" />
+  <rect x="40" y="280" width="80" height="80" fill="#000" />
+  <rect x="240" y="200" width="80" height="80" fill="#000" />
+  <rect x="160" y="120" width="40" height="160" fill="#000" />
+  <rect x="200" y="260" width="40" height="40" fill="#000" />
+  <rect x="120" y="220" width="40" height="40" fill="#000" />
+  <text x="50%" y="370" text-anchor="middle" font-family="'Inter', sans-serif" font-size="24" fill="#2b3a67">QR mô phỏng Lá cờ</text>
+</svg>

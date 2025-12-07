@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fefdf9" />
+  <path d="M200 520 L600 260 L1000 520" fill="none" stroke="#2b3a67" stroke-width="30" stroke-linecap="round" />
+  <rect x="260" y="400" width="680" height="280" fill="#d9a66a" opacity="0.3" />
+  <text x="50%" y="50%" text-anchor="middle" font-size="64" font-family="'Inter', sans-serif" fill="#2b3a67">Nhà tưởng niệm</text>
+  <text x="50%" y="62%" text-anchor="middle" font-size="26" font-family="'Noto Serif', serif" fill="#1f1f1f">Đồ hoạ mô phỏng</text>
+</svg>

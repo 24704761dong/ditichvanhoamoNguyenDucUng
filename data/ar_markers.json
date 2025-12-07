@@ -1,0 +1,34 @@
+[
+  {
+    "id": "marker_nguyen_duc_ung",
+    "title": "Marker Nguyễn Đức Ứng",
+    "patternUrl": "assets/markers/nguyen_duc_ung.patt",
+    "qrImage": "assets/markers/nguyen_duc_ung_qr.svg",
+    "qrLink": "https://example.org/ar/nguyen-duc-ung",
+    "modelUrl": "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+    "modelScale": "0.3 0.3 0.3",
+    "modelRotation": "0 180 0",
+    "modelPosition": "0 0 0",
+    "audio": "assets/audio/audio_thuyet_minh.wav",
+    "description": "Quét marker đặt trên bia để thấy mô hình 3D minh hoạ Nguyễn Đức Ứng (Astronaut.glb).",
+    "printSizeCm": "10x10",
+    "minDistanceCm": 40,
+    "maxDistanceCm": 80
+  },
+  {
+    "id": "marker_flag",
+    "title": "Marker Lá cờ phục dựng",
+    "patternUrl": "assets/markers/la_co.patt",
+    "qrImage": "assets/markers/la_co_qr.svg",
+    "qrLink": "https://example.org/ar/la-co",
+    "modelUrl": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb",
+    "modelScale": "0.4 0.4 0.4",
+    "modelRotation": "0 90 0",
+    "modelPosition": "0 0 0",
+    "audio": "assets/audio/audio_thuyet_minh.wav",
+    "description": "Hiển thị lá cờ phục dựng trong không gian AR, kèm nút nghe thuyết minh mô phỏng.",
+    "printSizeCm": "10x10",
+    "minDistanceCm": 40,
+    "maxDistanceCm": 80
+  }
+]

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MVP bảo tàng di sản nghĩa binh với AR, bản đồ, bảo tàng ảo và timeline tương tác.">
+  <meta property="og:title" content="Trưng bày số hóa Nghĩa binh">
+  <meta property="og:description" content="Trải nghiệm AR marker-based, bản đồ, timeline và bảo tàng ảo.">
+  <meta property="og:image" content="assets/images/khuôn viên.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="src/vendor/leaflet.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/vis-timeline@7.7.4/styles/vis-timeline-graph2d.min.css">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <title>Trưng bày số hóa Nghĩa binh</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Mộ Lãnh binh Nguyễn Đức Ứng và 27 nghĩa binh chống Pháp",
+      "url": "https://example.org",
+      "description": "Website AR + bảo tàng ảo tái hiện câu chuyện nghĩa binh.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Tác giả dự thi"
+      }
+    }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Mộ Lãnh binh Nguyễn Đức Ứng và 27 nghĩa binh chống Pháp</div>
+    <div class="header-actions">
+      <button class="menu-toggle" id="menu-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Mở menu điều hướng">
+        <span class="menu-icon" aria-hidden="true"></span>
+        Menu
+      </button>
+      <nav id="primary-nav" class="nav-panel" aria-label="Điều hướng chính" hidden>
+        <a href="#hero">Home</a>
+        <a href="#museum">Bảo tàng</a>
+        <a href="#map">Bản đồ</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#ar-module">AR</a>
+        <a href="#resources">Tài liệu</a>
+      </nav>
+      <div class="lang-switch">
+        <button id="lang-toggle" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.32 6h-3.24a15.6 15.6 0 0 0-1.26-3.6A8.04 8.04 0 0 1 19.32 8zm-5.02 0h-3.6A13.5 13.5 0 0 1 12 4.2 13.5 13.5 0 0 1 14.3 8zM4.68 8h3.24c.32-1.27.76-2.46 1.26-3.6A8.04 8.04 0 0 0 4.68 8zM4 12c0-.69.07-1.36.2-2h3.6a23.4 23.4 0 0 0 0 4H4.2c-.13-.64-.2-1.31-.2-2zm.68 4h3.24c-.5 1.27-.94 2.46-1.26 3.6A8.04 8.04 0 0 1 4.68 16zm5.02 0h3.6c-.4 1.4-.92 2.63-1.8 3.8-.88-1.17-1.4-2.4-1.8-3.8zm4.38 3.6c.5-1.14.94-2.33 1.26-3.6h3.24a8.04 8.04 0 0 1-4.5 3.6zM19.8 14h-3.6a23.4 23.4 0 0 0 0-4h3.6c.13.64.2 1.31.2 2s-.07 1.36-.2 2z"/>
+            </svg>
+          </span>
+          <span class="lang-code" aria-live="polite">VI</span>
+        </button>
+        <ul id="lang-menu" class="lang-menu" aria-label="Chọn ngôn ngữ" hidden>
+    <li><button class="lang-option" data-lang="vi">Tiếng Việt</button></li>
+    <li><button class="lang-option" data-lang="en">English</button></li>
+    <li><button class="lang-option" data-lang="fr">Français</button></li>
+    <li><button class="lang-option" data-lang="es">Español</button></li>
+    <li><button class="lang-option" data-lang="de">Deutsch</button></li>
+    <li><button class="lang-option" data-lang="it">Italiano</button></li>
+    <li><button class="lang-option" data-lang="pt">Português</button></li>
+    <li><button class="lang-option" data-lang="ru">Русский</button></li>
+    <li><button class="lang-option" data-lang="zh">中文 (Chinese)</button></li>
+    <li><button class="lang-option" data-lang="ja">日本語 (Japanese)</button></li>
+    <li><button class="lang-option" data-lang="ko">한국어 (Korean)</button></li>
+    <li><button class="lang-option" data-lang="ar">العربية (Arabic)</button></li>
+    <li><button class="lang-option" data-lang="hi">हिन्दी (Hindi)</button></li>
+    <li><button class="lang-option" data-lang="th">ไทย (Thai)</button></li>
+    <li><button class="lang-option" data-lang="id">Bahasa Indonesia</button></li>
+    <li><button class="lang-option" data-lang="ms">Bahasa Melayu</button></li>
+    <li><button class="lang-option" data-lang="nl">Nederlands (Dutch)</button></li>
+    <li><button class="lang-option" data-lang="sv">Svenska (Swedish)</button></li>
+    <li><button class="lang-option" data-lang="no">Norsk (Norwegian)</button></li>
+    <li><button class="lang-option" data-lang="da">Dansk (Danish)</button></li>
+    <li><button class="lang-option" data-lang="fi">Suomi (Finnish)</button></li>
+    <li><button class="lang-option" data-lang="pl">Polski (Polish)</button></li>
+    <li><button class="lang-option" data-lang="cs">Čeština (Czech)</button></li>
+    <li><button class="lang-option" data-lang="sk">Slovenčina (Slovenian)</button></li>
+    <li><button class="lang-option" data-lang="ro">Română (Romanian)</button></li>
+    <li><button class="lang-option" data-lang="hu">Magyar (Hungarian)</button></li>
+    <li><button class="lang-option" data-lang="tr">Türkçe (Turkish)</button></li>
+    <li><button class="lang-option" data-lang="el">Ελληνικά (Greek)</button></li>
+    <li><button class="lang-option" data-lang="he">עברית (Hebrew)</button></li>
+    <li><button class="lang-option" data-lang="uk">Українська (Ukrainian)</button></li>
+    <li><button class="lang-option" data-lang="bg">Български (Bulgarian)</button></li>
+    <li><button class="lang-option" data-lang="sr">Српски (Serbian)</button></li>
+    <li><button class="lang-option" data-lang="hr">Hrvatski (Croatian)</button></li>
+    <li><button class="lang-option" data-lang="sl">Slovenščina (Slovenian)</button></li>
+    <li><button class="lang-option" data-lang="et">Eesti (Estonian)</button></li>
+    <li><button class="lang-option" data-lang="lv">Latviešu (Latvian)</button></li>
+    <li><button class="lang-option" data-lang="lt">Lietuvių (Lithuanian)</button></li>
+    <li><button class="lang-option" data-lang="fa">فارسی (Persian)</button></li>
+    <li><button class="lang-option" data-lang="ur">اردو (Urdu)</button></li>
+    <li><button class="lang-option" data-lang="bn">বাংলা (Bengali)</button></li>
+    <li><button class="lang-option" data-lang="ta">தமிழ் (Tamil)</button></li>
+    <li><button class="lang-option" data-lang="te">తెలుగు (Telugu)</button></li>
+    <li><button class="lang-option" data-lang="ml">മലയാളം (Malayalam)</button></li>
+    <li><button class="lang-option" data-lang="sw">Kiswahili (Swahili)</button></li>
+    <li><button class="lang-option" data-lang="af">Afrikaans</button></li>
+    <li><button class="lang-option" data-lang="zu">Zulu</button></li>
+    <li><button class="lang-option" data-lang="am">አማርኛ (Amharic)</button></li>
+    <li><button class="lang-option" data-lang="ne">नेपाली (Nepali)</button></li>
+    <li><button class="lang-option" data-lang="km">ភាសាខ្មែរ (Khmer)</button></li>
+</ul>
+
+    
+      </div>
+    </div>
+  </header>
+
+  <section class="intro-media" aria-label="Giới thiệu nhanh">
+    <div class="audio-banner">
+      <div>
+        <p class="eyebrow">AUDIO THUYẾT MINH VỀ KHU DI TÍCH</p>
+        <p>Bản thu <strong>lời dẫn khảo cứu dựa trên tư liệu Ban Quản lý di tích Đồng Nai</strong> kể lại hành trình đấu tranh của Nghĩa binh tại Mộ Nguyễn Đức Ứng và 27 chiến sĩ.</p>
+      </div>
+      <audio controls preload="metadata" src="assets/audio/audio_thuyet_minh.wav">
+        Trình duyệt của bạn không hỗ trợ phát audio.
+      </audio>
+    </div>
+    <figure class="cover-image">
+      <img src="assets/images/khuôn viên.jpg" alt="Toàn cảnh khuôn viên khu di tích nhìn từ hồ nhân tạo" loading="lazy">
+      <figcaption>Khuôn viên mộ Nguyễn Đức Ứng.</figcaption>
+    </figure>
+  </section>
+
+  <main>
+    <section id="hero" class="hero">
+      <div>
+        <p class="eyebrow">Di tích lịch sử Đồng Nai</p>
+        <h1>Mộ Lãnh binh Nguyễn Đức Ứng và 27 nghĩa binh chống Pháp</h1>
+        <p class="lead">Không gian số này tái hiện câu chuyện những nghĩa binh yêu nước đã cùng ngã xuống và được dân làng lập mộ chung.</p>
+        <p>Phiên bản MVP giúp giới thiệu thần tích, sơ đồ địa hình và dấu tích còn lại của cụm mộ, đồng thời cung cấp trải nghiệm AR, bản đồ và timeline để giáo viên, học sinh và du khách hiểu rõ hơn về trận đánh và tinh thần hi sinh của Lãnh Binh Nguyễn Đức Ứng và 27 nghĩa binh.</p>
+        <div class="cta-group">
+          <a class="btn primary" href="#ar-module">Bắt đầu trải nghiệm AR</a>
+          <a class="btn ghost" href="content.md" target="_blank" rel="noopener">Đọc nội dung chi tiết</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Vị trí: tỉnh Đồng Nai.</li>
+          <li>Nhân vật trung tâm: Lãnh binh Nguyễn Đức Ứng và 27 nghĩa binh hy sinh năm 1861.</li>
+          <li>Giá trị: ghi dấu phong trào kháng Pháp đầu thời kỳ thuộc địa và truyền thống nghĩa binh Nam Bộ.</li>
+          <li>Trải nghiệm số: AR marker, bảo tàng ảnh, bản đồ Leaflet, timeline tương tác và audio thuyết minh.</li>
+        </ul>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <p>Module chính</p>
+        <ul>
+          <li><span>01</span> AR marker &amp; QR fallback</li>
+          <li><span>02</span> Bảo tàng ảo &amp; lightbox</li>
+          <li><span>03</span> Bản đồ Leaflet + hành trình</li>
+          <li><span>04</span> Timeline vis-timeline</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="ar-module" class="panel">
+      <div class="panel-header">
+        <h2>AR marker-based &amp; QR fallback</h2>
+        <p>Nhấn "Quét hình ảnh" để bật camera. Sau đó quét lên hiện vật. Hệ thống sẽ hiển thị thông tin của hiện vật đó! Đây chỉ là mô phỏng dự án thực tế.<model-viewer>`.</p>
+      </div>
+      <div class="ar-grid">
+        <div class="ar-live">
+          <div class="scan-cta">
+            <button class="btn primary" id="scan-trigger" aria-haspopup="dialog">Quét hình ảnh</button>
+            <p>Khi quét thành công hiện vật, hệ thống sẽ hiển thị thông tin chi tiết.</p>
+          </div>
+          <div class="ar-viewport" id="ar-viewport" data-state="idle" aria-live="polite" aria-busy="true" hidden>
+            <div class="ar-viewport__placeholder">
+              <p>Camera sẽ xuất hiện sau khi bạn nhấn "Quét hình ảnh" để đảm bảo quyền riêng tư.</p>
+              <small>Live-view giả lập dùng A-Frame + AR.js, không lưu lại hình ảnh.</small>
+            </div>
+            <a-scene class="ar-viewport__scene" embedded arjs="sourceType: webcam; debugUIEnabled: false;" aria-hidden="true">
+              <a-assets>
+                <a-asset-item id="arModel" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"></a-asset-item>
+              </a-assets>
+              <a-marker id="dynamic-marker" preset="hiro">
+                <a-entity id="ar-entity" gltf-model="#arModel" scale="0.3 0.3 0.3" rotation="0 180 0"></a-entity>
+              </a-marker>
+              <a-entity camera></a-entity>
+            </a-scene>
+          </div>
+          <p class="ar-note">Thông tin chi tiết của hiện vật.</p>
+          <button class="btn ghost" id="play-ar-audio" aria-label="Phát thuyết minh AR">Nghe thuyết minh</button>
+        </div>
+        <div class="ar-fallback">
+          <h3>Danh mục marker &amp; QR</h3>
+          <ul id="ar-marker-list" class="marker-list" aria-live="polite"></ul>
+          <div class="ar-illustrations" aria-label="Ảnh minh họa 2D">
+            <figure>
+              <img src="assets/images/bia tưởng niệm_phía trước.jpg" alt="Ảnh 2D bia tưởng niệm" loading="lazy">
+              <figcaption>Bia tưởng niệm phía trước – dùng để giới thiệu bố cục marker.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/bàn thờ chính diện.jpg" alt="Ảnh 2D bàn thờ chính" loading="lazy">
+              <figcaption>Bàn thờ chính diện cho thấy chất liệu gỗ và ánh sáng nội thất.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/quan cảnh khu mộ tập thể.jpg" alt="Ảnh 2D khu mộ tập thể" loading="lazy">
+              <figcaption>Quang cảnh khu mộ tập thể nhìn từ lối vào chính.</figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="museum" class="panel">
+      <div class="panel-header">
+        <h2>Bảo tàng ảo</h2>
+        <p>Khám phá 6 hiện vật qua ảnh, audio, mô hình 3D. Nút "Bắt đầu tour" chạy trình chiếu tự động.</p>
+        <div class="cta-group">
+          <button class="btn primary" id="start-tour">Bắt đầu tour</button>
+          <button class="btn ghost" id="stop-tour">Dừng tour</button>
+        </div>
+      </div>
+      <div class="gallery" id="museum-grid" aria-live="polite"></div>
+ 
+    </section>
+
+    <section id="map" class="panel">
+      <div class="panel-header">
+        <h2>Bản đồ tương tác</h2>
+        <p>Leaflet kết hợp lớp nền hiện tại và lớp HOT mô phỏng bản đồ lịch sử các trận đánh; mỗi điểm popup hiển thị ảnh .jpg, audio thuyết minh chung và liên kết AR.</p>
+        <div class="cta-group">
+          <button class="btn primary" id="play-route">Phát hành trình</button>
+          <button class="btn ghost" id="reset-route">Đặt lại</button>
+        </div>
+      </div>
+      <div id="map-container" role="region" aria-label="Bản đồ tương tác"></div>
+    </section>
+
+    <section id="timeline" class="panel">
+      <div class="panel-header">
+        <h2>Timeline sự kiện</h2>
+        <p>Biểu đồ đường thể hiện 5 mốc quan trọng của nghĩa binh theo thứ tự thời gian; chạm vào điểm bất kỳ để xem mô tả chi tiết và focus tới bản đồ.</p>
+      </div>
+      <div id="timeline-container" role="region" aria-label="Biểu đồ timeline">
+        <canvas id="timeline-chart" aria-label="Biểu đồ đường timeline" role="img"></canvas>
+      </div>
+      <div id="timeline-story" class="timeline-story" aria-live="polite" aria-label="Diễn biến lịch sử"></div>
+    </section>
+
+    
+  </main>
+
+  <footer class="site-footer">
+    <p>ĐÂY CHỈ LÀ SẢN PHẨM MÔ PHỎNG DỰ ÁN WEBSITE DI TÍCH SỐ HÓA DO TÁC GIẢ NGUYỄN NGỌC MAI THAM GIA THỰC HIỆN PHỤC VỤ CHO CUỘC THI VĂN HÓA DI SẢN 2025 TỈNH ĐỒNG NAI - MỌI THÔNG TIN ĐỀU LÀ MÔ PHỎNG, GIẢ ĐỊNH VÀ KHÔNG CÓ TÍNH XÁC THỰC</p>
+  </footer>
+
+  <div id="scan-overlay" class="scan-overlay" aria-hidden="true" role="dialog" aria-label="Mô phỏng camera quét marker">
+    <div class="scan-frame">
+      <button class="scan-close" data-close-scan aria-label="Đóng mô phỏng">×</button>
+      <div class="scan-viewfinder">
+        <img src="assets/images/bia tưởng niệm_phía sau.jpg" alt="Khung camera mô phỏng hướng vào bia tưởng niệm" loading="lazy">
+        <div class="scan-status">Đang quét… chưa nhận diện được marker hợp lệ.</div>
+      </div>
+      <button class="btn ghost" data-close-scan>Đóng camera mô phỏng</button>
+    </div>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Đóng" id="modal-close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.2/aframe/build/aframe-ar.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+  
+  <script src="src/vendor/leaflet.js"></script>
+  <script src="src/vendor/chart.umd.min.js"></script>
+  <script src="src/vendor/chartjs-adapter-date-fns.bundle.min.js"></script>
+  
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

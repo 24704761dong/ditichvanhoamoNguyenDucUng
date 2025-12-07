@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#1b2238" />
+  <path d="M200 620 L1000 220" stroke="#d9a66a" stroke-width="26" stroke-linecap="round" />
+  <circle cx="250" cy="590" r="60" fill="#854d1d" />
+  <text x="50%" y="50%" text-anchor="middle" font-size="58" font-family="'Inter', sans-serif" fill="#f6f4ef">Dao trượng</text>
+  <text x="50%" y="65%" text-anchor="middle" font-size="28" font-family="'Noto Serif', serif" fill="#f6f4ef">Placeholder minh hoạ</text>
+</svg>

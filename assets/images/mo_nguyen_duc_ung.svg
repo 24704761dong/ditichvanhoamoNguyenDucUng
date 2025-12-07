@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6f4ef" />
+      <stop offset="100%" stop-color="#d9a66a" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)" />
+  <rect x="350" y="160" width="500" height="520" rx="40" ry="40" fill="#2b3a67" opacity="0.15" />
+  <text x="50%" y="45%" text-anchor="middle" font-size="64" font-family="'Inter', sans-serif" fill="#2b3a67">Bia mộ</text>
+  <text x="50%" y="55%" text-anchor="middle" font-size="42" font-family="'Noto Serif', serif" fill="#1f1f1f">Nguyễn Đức Ứng</text>
+  <text x="50%" y="70%" text-anchor="middle" font-size="24" font-family="'Inter', sans-serif" fill="#2b3a67">Hình minh hoạ mô phỏng · CC0</text>
+</svg>

@@ -1,0 +1,477 @@
+[
+  {
+    "id": "m1",
+    "title": "Bia mộ Nguyễn Đức Ứng",
+    "category": "Bi ký",
+    "era": "Cuối thế kỷ XIX",
+    "creator": "Thợ đá An Hải",
+    "date": "1896",
+    "description": "Hai mặt bia đá khắc chữ Hán Nôm, ghi rõ danh hiệu và lời tuyên thệ trung nghĩa của lãnh binh.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bia mộ trên.jpg",
+        "thumb": "assets/images/bia mộ trên.jpg",
+        "alt": "Bia mộ nhìn từ trên xuống",
+        "caption": "Mặt bia đặt giữa sân lát gạch"
+      },
+      {
+        "type": "image",
+        "url": "assets/images/bia mộ dưới.jpg",
+        "thumb": "assets/images/bia mộ dưới.jpg",
+        "alt": "Cận cảnh chân bia",
+        "caption": "Chi tiết nền bia sau trùng tu"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Gia đình họ Nguyễn bàn giao năm 1954",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p1"]
+  },
+  {
+    "id": "m2",
+    "title": "Khu mộ chung 27 nghĩa binh",
+    "category": "Kiến trúc mộ",
+    "era": "1896",
+    "creator": "Cộng đồng làng An Hải",
+    "date": "1896",
+    "description": "Quần thể mộ bán nguyệt cùng bia tưởng niệm lát đá bao quanh bởi hàng cây cổ thụ.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/quan cảnh khu mộ tập thể.jpg",
+        "thumb": "assets/images/quan cảnh khu mộ tập thể.jpg",
+        "alt": "Toàn cảnh khu mộ tập thể",
+        "caption": "Ảnh góc thấp hướng về bia tưởng niệm"
+      },
+      {
+        "type": "image",
+        "url": "assets/images/quan cảnh khu mộ tập thể_2.jpg",
+        "thumb": "assets/images/quan cảnh khu mộ tập thể_2.jpg",
+        "alt": "Góc nhìn trên cao",
+        "caption": "Đường di chuyển quanh khu mộ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Được trùng tu năm 2002",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2"]
+  },
+  {
+    "id": "m3",
+    "title": "Văn tế nghĩa binh",
+    "category": "Thủ bản",
+    "era": "1896",
+    "creator": "Hương chức An Hải",
+    "date": "1896-07-13",
+    "description": "Bản khắc văn tế ở mặt sau bia tưởng niệm ghi lại đầy đủ danh hiệu và lời tiễn đưa.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/nội dung phía sau bia tưởng niệm.jpg",
+        "thumb": "assets/images/nội dung phía sau bia tưởng niệm.jpg",
+        "alt": "Chi tiết chữ khắc",
+        "caption": "Nội dung văn bia chụp cận cảnh"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Lưu trữ nhà thờ họ Trần",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2", "p3"]
+  },
+  {
+    "id": "m4",
+    "title": "Bàn thờ chính diện",
+    "category": "Không gian thờ",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Bàn thờ trung tâm đặt hương án, lọ lộc bình và câu đối, nơi người dân dâng lễ dịp giỗ.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bàn thờ chính diện.jpg",
+        "thumb": "assets/images/bàn thờ chính diện.jpg",
+        "alt": "Bàn thờ chính diện",
+        "caption": "Không gian trung tâm của nhà thờ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m5",
+    "title": "Bàn thờ cánh trái",
+    "category": "Không gian thờ",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Bàn thờ phụ bên trái lưu giữ đồ lễ và trống nhỏ phục vụ nghi thức.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bàn thờ cánh trái.jpg",
+        "thumb": "assets/images/bàn thờ cánh trái.jpg",
+        "alt": "Bàn thờ cánh trái",
+        "caption": "Góc nhìn bao quát bàn thờ phụ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m6",
+    "title": "Không gian nội thất miếu thờ",
+    "category": "Không gian kiến trúc",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Nội thất miếu với vì kèo gỗ, ánh sáng tự nhiên và dãy bàn ghế đón khách tham quan.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bên trong ngôi miếu thờ.jpg",
+        "thumb": "assets/images/bên trong ngôi miếu thờ.jpg",
+        "alt": "Không gian bên trong miếu",
+        "caption": "Ảnh panorama nội thất"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m7",
+    "title": "Bàn thờ cánh phải",
+    "category": "Không gian thờ",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Bàn thờ phụ bên phải trưng bày hoành phi câu đối và nhạc khí treo.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bàn thờ cánh phải.jpg",
+        "thumb": "assets/images/bàn thờ cánh phải.jpg",
+        "alt": "Bàn thờ cánh phải",
+        "caption": "Không gian đối xứng với bên trái"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m8",
+    "title": "Bia tưởng niệm phía trước",
+    "category": "Bi ký",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Mặt trước bia tưởng niệm ghi danh 27 nghĩa binh với hàng chữ khắc sâu.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bia tưởng niệm_phía trước.jpg",
+        "thumb": "assets/images/bia tưởng niệm_phía trước.jpg",
+        "alt": "Mặt trước bia tưởng niệm",
+        "caption": "Hoa văn bao quanh trụ bia"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "UBND xã lưu giữ",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2"]
+  },
+  {
+    "id": "m9",
+    "title": "Bia tưởng niệm phía sau",
+    "category": "Bi ký",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Mặt sau bia khắc văn tế và lời tri ân những người ngã xuống.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/bia tưởng niệm_phía sau.jpg",
+        "thumb": "assets/images/bia tưởng niệm_phía sau.jpg",
+        "alt": "Bia tưởng niệm mặt sau",
+        "caption": "Chi tiết văn bia sau khi làm sạch"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "UBND xã lưu giữ",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2"]
+  },
+  {
+    "id": "m10",
+    "title": "Trống lễ cỡ lớn",
+    "category": "Nhạc khí",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Trống lớn đặt phía sau bàn thờ, dùng để báo hiệu nghi thức đọc văn tế.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/trống lớn trong miếu.jpg",
+        "thumb": "assets/images/trống lớn trong miếu.jpg",
+        "alt": "Trống lớn",
+        "caption": "Mặt trống sơn son thếp vàng"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m11",
+    "title": "Trống nhỏ phụ trợ",
+    "category": "Nhạc khí",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Trống nhỏ dùng để gõ nhịp dẫn dắt đoàn lễ di chuyển quanh khu mộ.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/trống nhỏ trong miếu.jpg",
+        "thumb": "assets/images/trống nhỏ trong miếu.jpg",
+        "alt": "Trống nhỏ",
+        "caption": "Nhạc khí đặt cạnh bàn thờ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m12",
+    "title": "Chuông đồng treo",
+    "category": "Nhạc khí",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Chuông đồng gõ lên khi đoàn rước bước vào miếu, tạo nên trường âm trang trọng.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/cái chuông.jpg",
+        "thumb": "assets/images/cái chuông.jpg",
+        "alt": "Chuông đồng",
+        "caption": "Chuông treo trên giá gỗ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m13",
+    "title": "Chiêng lễ",
+    "category": "Nhạc khí",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Chiêng đặt cạnh bàn thờ dùng để điểm nhịp mở đầu văn tế.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/cái chiêng.jpg",
+        "thumb": "assets/images/cái chiêng.jpg",
+        "alt": "Chiêng đồng",
+        "caption": "Chiêng đặt trên khung gỗ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m14",
+    "title": "Kết cấu trần miếu",
+    "category": "Kiến trúc",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Hệ vì kèo gỗ chạm khắc họa tiết mây vờn và màu sơn truyền thống.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/kết cấu trần miếu thờ.jpg",
+        "thumb": "assets/images/kết cấu trần miếu thờ.jpg",
+        "alt": "Kết cấu trần",
+        "caption": "Nhìn lên mái miếu"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m15",
+    "title": "Mặt tiền miếu thờ",
+    "category": "Kiến trúc",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Mặt tiền sơn vàng với mái ngói cong là biểu tượng nhận diện của khu tưởng niệm.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/miếu thờ bên ngoài.jpg",
+        "thumb": "assets/images/miếu thờ bên ngoài.jpg",
+        "alt": "Mặt tiền miếu",
+        "caption": "Cổng miếu nhìn từ đường chính"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhà tưởng niệm",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m16",
+    "title": "Hồ nhân tạo trước miếu",
+    "category": "Cảnh quan",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Hồ nước điều hòa vi khí hậu, soi bóng miếu và tạo trục cảnh quan mềm mại.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/hồ nhân tạo.jpg",
+        "thumb": "assets/images/hồ nhân tạo.jpg",
+        "alt": "Hồ nhân tạo",
+        "caption": "Hồ nằm ngay trước cửa miếu"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Cộng đồng địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m17",
+    "title": "Toàn cảnh khuôn viên",
+    "category": "Cảnh quan",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Ảnh rộng thể hiện hàng cây, hồ nước và tuyến tham quan chính, dùng làm bìa trang chủ.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/khuôn viên.jpg",
+        "thumb": "assets/images/khuôn viên.jpg",
+        "alt": "Khuôn viên di tích",
+        "caption": "Ảnh dùng cho hero website"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Cộng đồng địa phương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2", "p3"]
+  },
+  {
+    "id": "m18",
+    "title": "Tác giả hành hương",
+    "category": "Sinh hoạt",
+    "era": "Ảnh chụp 2025",
+    "creator": "Tác giả tư liệu",
+    "date": "2025",
+    "description": "Khoảnh khắc tác giả dâng nén hương bên trong miếu, minh họa trải nghiệm tham quan.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/tác giả hành hương trong miếu.jpg",
+        "thumb": "assets/images/tác giả hành hương trong miếu.jpg",
+        "alt": "Tác giả hành hương",
+        "caption": "Ảnh ghi lại trải nghiệm cá nhân"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Nhật ký hành hương",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  {
+    "id": "m19",
+    "title": "Quyết định công nhận di tích",
+    "category": "Tư liệu hành chính",
+    "era": "1990",
+    "creator": "UBND tỉnh Đồng Nai",
+    "date": "1990",
+    "description": "Văn bản công nhận di tích cấp quốc gia, cơ sở pháp lý cho các đợt trùng tu.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/quyết định công nhận di tích quốc gia.jpg",
+        "thumb": "assets/images/quyết định công nhận di tích quốc gia.jpg",
+        "alt": "Quyết định xếp hạng",
+        "caption": "Trang ký duyệt của UBND tỉnh"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "UBND tỉnh Đồng Nai",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p3"]
+  },
+  
+  {
+    "id": "m21",
+    "title": "Ảnh tư liệu hành chính",
+    "category": "Tư liệu lưu trữ",
+    "era": "1993",
+    "creator": "Gia đình nghĩa binh",
+    "date": "1993",
+    "description": "Bản chụp tài liệu minh họa quá trình hoàn thiện hồ sơ di tích.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/eb1ea640db24547a0d35.jpg",
+        "thumb": "assets/images/eb1ea640db24547a0d35.jpg",
+        "alt": "Tư liệu giấy tờ",
+        "caption": "Ảnh chụp trang hồ sơ"
+      }
+    ],
+    "audioGuide": "assets/audio/audio_thuyet_minh.wav",
+    "model": null,
+    "provenance": "Gia đình họ Nguyễn",
+    "license": "CC BY-NC 4.0",
+    "relatedPoints": ["p2", "p3"]
+  }
+]

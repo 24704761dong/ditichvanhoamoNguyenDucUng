@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#0f192d" />
+  <polyline points="100,650 400,500 700,520 1000,360" fill="none" stroke="#ffbe86" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="400" cy="500" r="18" fill="#ffbe86" />
+  <circle cx="700" cy="520" r="18" fill="#ffbe86" />
+  <text x="50%" y="45%" text-anchor="middle" font-size="60" font-family="'Inter', sans-serif" fill="#f6f4ef">Trận đánh 1896</text>
+  <text x="50%" y="62%" text-anchor="middle" font-size="28" font-family="'Noto Serif', serif" fill="#d9a66a">Đồ hoạ tuyến hành quân</text>
+</svg>

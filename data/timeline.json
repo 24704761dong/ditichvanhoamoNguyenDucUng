@@ -1,0 +1,82 @@
+[
+  {
+    "id": "t1",
+    "dateStart": "1885-07-05",
+    "dateEnd": null,
+    "title": "Phong trào Cần Vương lan tới vùng biển An Hải",
+    "summary": "Sau biến cố Kinh đô, hương chức lập đội nghĩa binh canh giữ cửa biển, sơ đồ hóa các lối thoát và kho tiếp vận trên nền bản đồ cổ.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/1579767537309575705.jpg",
+        "caption": "Bản đồ ghi chú tay hệ thống phòng thủ",
+        "credit": "Ảnh lưu trữ gia đình Nguyễn (scan 2025)"
+      }
+    ],
+    "mapPointId": "p3"
+  },
+  {
+    "id": "t2",
+    "dateStart": "1890-01-01",
+    "dateEnd": null,
+    "title": "Nguyễn Đức Ứng nhận trách nhiệm chỉ huy",
+    "summary": "Ông phụ trách toàn bộ hoạt động hậu cần, thuyết minh đào tạo nghĩa binh trẻ về cách sử dụng trống chiêng báo động và ám hiệu khói.",
+    "media": [
+      {
+        "type": "audio",
+        "url": "assets/audio/audio_thuyet_minh.wav",
+        "caption": "Bản thuyết minh chung",
+        "credit": "Thu âm mô phỏng Nghĩa Binh 2025"
+      }
+    ],
+    "mapPointId": "p1"
+  },
+  {
+    "id": "t3",
+    "dateStart": "1896-07-10",
+    "dateEnd": null,
+    "title": "Trận tập kích ven sông Hàn",
+    "summary": "Đội hình nghĩa binh vượt bờ kè, giao tranh trong mưa lớn; 27 chiến sĩ cùng thủ lĩnh anh dũng hy sinh.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/quan cảnh khu mộ tập thể_2.jpg",
+        "caption": "Vị trí ghi dấu trận đánh nhìn từ trên cao",
+        "credit": "Ảnh flycam mô phỏng Nghĩa Binh 2025"
+      }
+    ],
+    "mapPointId": "p2"
+  },
+  {
+    "id": "t4",
+    "dateStart": "1896-07-12",
+    "dateEnd": "1896-07-13",
+    "title": "Mai táng và lập mộ chung",
+    "summary": "Dân làng thay phiên thức trắng hai đêm, khắc toàn văn văn tế lên bia đá và dựng cụm mộ bán nguyệt.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/nội dung phía sau bia tưởng niệm.jpg",
+        "caption": "Khắc văn tế phía sau bia tưởng niệm",
+        "credit": "Ảnh chụp hiện trạng 2025"
+      }
+    ],
+    "mapPointId": "p2"
+  },
+  {
+    "id": "t5",
+    "dateStart": "1955-03-01",
+    "dateEnd": null,
+    "title": "Trùng tu nhà tưởng niệm",
+    "summary": "Thế hệ sau vận động kinh phí, dựng nhà tưởng niệm, lập hồ cảnh quan và xin quyết định xếp hạng di tích quốc gia.",
+    "media": [
+      {
+        "type": "image",
+        "url": "assets/images/quyết định công nhận di tích quốc gia.jpg",
+        "caption": "Quyết định công nhận di tích",
+        "credit": "Tài liệu lưu trữ UBND tỉnh"
+      }
+    ],
+    "mapPointId": "p3"
+  }
+]

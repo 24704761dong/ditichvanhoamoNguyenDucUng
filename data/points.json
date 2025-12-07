@@ -1,0 +1,56 @@
+[
+  {
+    "id": "p1",
+    "title": "Mộ Nguyễn Đức Ứng",
+    "lat": 16.045,
+    "lng": 108.187,
+    "short_desc": "Bia mộ khắc chữ Hán được trùng tu, xung quanh lát gạch đỏ và trồng cây thị cổ.",
+    "images": [
+      "assets/images/bia mộ trên.jpg",
+      "assets/images/bia mộ dưới.jpg"
+    ],
+    "image_credit": "Ảnh hiện trường: nhóm tư liệu Nghĩa Binh 2025",
+    "audio": "assets/audio/audio_thuyet_minh.wav",
+    "ar_target": "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+    "museum_item_id": "m1",
+    "qr_link": "https://example.org/ar/nguyen-duc-ung",
+    "route_order": 1,
+    "overlay": "today"
+  },
+  {
+    "id": "p2",
+    "title": "Khu mộ chung 27 nghĩa binh",
+    "lat": 16.047,
+    "lng": 108.19,
+    "short_desc": "Toàn cảnh gò mộ tập thể và bia tưởng niệm mới dựng kèm bản văn khắc phía sau.",
+    "images": [
+      "assets/images/quan cảnh khu mộ tập thể.jpg",
+      "assets/images/quan cảnh khu mộ tập thể_2.jpg"
+    ],
+    "image_credit": "Ảnh flycam mô phỏng: Nghĩa Binh 2025",
+    "audio": "assets/audio/audio_thuyet_minh.wav",
+    "ar_target": null,
+    "museum_item_id": "m2",
+    "qr_link": "https://example.org/ar/mo-chung-27",
+    "route_order": 2,
+    "overlay": "history"
+  },
+  {
+    "id": "p3",
+    "title": "Nhà tưởng niệm địa phương",
+    "lat": 16.0483,
+    "lng": 108.1925,
+    "short_desc": "Miếu thờ, hồ nước và không gian nội thất trưng bày trống chiêng cùng bàn thờ trung tâm.",
+    "images": [
+      "assets/images/miếu thờ bên ngoài.jpg",
+      "assets/images/bên trong ngôi miếu thờ.jpg"
+    ],
+    "image_credit": "Ảnh ghi nhận tại nhà tưởng niệm: Nghĩa Binh 2025",
+    "audio": "assets/audio/audio_thuyet_minh.wav",
+    "ar_target": "https://modelviewer.dev/shared-assets/models/RobotExpressive.glb",
+    "museum_item_id": "m6",
+    "qr_link": "https://example.org/ar/nha-tuong-niem",
+    "route_order": 3,
+    "overlay": "today"
+  }
+]
