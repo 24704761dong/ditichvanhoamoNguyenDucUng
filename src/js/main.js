@@ -492,7 +492,7 @@ function showMuseumModal(id) {
     ${mediaBlocks || ""}
     ${modelBlock}
     ${audioGuide ? `<audio controls src="${audioGuide}"></audio>` : ""}
-    <p class="status-banner">Giấy phép: ${item.license || "Đang cập nhật"}. Media mô phỏng dùng cho mục đích trình diễn.</p>
+    <p class="status-banner">Sản phẩm mô phỏng.</p>
   `);
 }
 
